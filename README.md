@@ -19,6 +19,8 @@ I didn't stop using Windows because of a hate of Microsoft. (OK, maybe it was 40
 
 I have learned some things over the years on how to use computers better.  And with my ability to explain technology in a way that doesn't try to insult the people who I help, here's yet another place where my generosity and knowledge has a place to shine.
 
+To get started installing Windows Subsystem for Linux, [go to Microsft's website](https://docs.microsoft.com/en-us/windows/wsl/about).
+
 ## FAQ
 
 ### Do I need to install Cmder/ConEmu?
@@ -26,6 +28,16 @@ I have learned some things over the years on how to use computers better.  And w
 Short answer: No.
 
 Long answer: Not really. I though about it. I can set it up a task in Cmder/ConEmu.  But is it worth doing? No. It just wraps it inside another layer.  My suggestion would be to use it as a place to do Powershell or CMD stuff.
+
+### Do I need Windows 10 to use this feature?
+
+**YES!** However, you don't need to go out and buy the professional version. You can use Windows 10 Home.
+
+I was rather surpirsed to learn that as of late February 2018, despite [Windows having an 88.78% market share of desktop operating systems](https://netmarketshare.com/operating-system-market-share.aspx?options=%7B%22filter%22%3A%7B%22%24and%22%3A%5B%7B%22deviceType%22%3A%7B%22%24in%22%3A%5B%22Desktop%2Flaptop%22%5D%7D%7D%5D%7D%2C%22dateLabel%22%3A%22Trend%22%2C%22attributes%22%3A%22share%22%2C%22group%22%3A%22platform%22%2C%22sort%22%3A%7B%22share%22%3A-1%7D%2C%22id%22%3A%22platformsDesktop%22%2C%22dateInterval%22%3A%22Monthly%22%2C%22dateStart%22%3A%222017-02%22%2C%22dateEnd%22%3A%222018-01%22%2C%22segments%22%3A%22-1000%22%2C%22plotKeys%22%3A%5B%7B%22platform%22%3A%22Windows%22%7D%5D%7D), [Windows 10 only makes up 28.19% of that share](https://netmarketshare.com/operating-system-market-share.aspx?options=%7B%22filter%22%3A%7B%22%24and%22%3A%5B%7B%22deviceType%22%3A%7B%22%24in%22%3A%5B%22Desktop%2Flaptop%22%5D%7D%7D%5D%7D%2C%22dateLabel%22%3A%22Trend%22%2C%22attributes%22%3A%22share%22%2C%22group%22%3A%22platformVersion%22%2C%22sort%22%3A%7B%22share%22%3A-1%7D%2C%22id%22%3A%22platformsDesktopVersions%22%2C%22dateInterval%22%3A%22Monthly%22%2C%22dateStart%22%3A%222017-02%22%2C%22dateEnd%22%3A%222018-01%22%2C%22segments%22%3A%22-1000%22%2C%22plotKeys%22%3A%5B%7B%22platformVersion%22%3A%22Windows%207%22%7D%2C%7B%22platformVersion%22%3A%22Windows%2010%22%7D%2C%7B%22platformVersion%22%3A%22Windows%20XP%22%7D%2C%7B%22platformVersion%22%3A%22Windows%208.1%22%7D%2C%7B%22platformVersion%22%3A%22Mac%20OS%20X%2010.12%22%7D%5D%7D).  Part of it might be that Windows 7 and 8 users were not keen about being told to upgrade operating systems, which Mac and Linux users happily oblige to do so.  It's probably because of how Windows does the upgrade process, which is about as fun as oral surgery.
+
+### Do I need to to set Windows 10 into Developer Mode to use WSL/Ubuntu?
+
+Not anymore.  While [this link](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/) has been a helpful resource, you don't need to go to "Update & Security" in your settings to set the Developer mode anymore. You can simply get by just using "Sideload apps".  Also, it was no fun having to be annoyed every other week about how I should update Windows.
 
 ### Should I still install Ubuntu from the Microsoft Store app?
 
@@ -98,6 +110,10 @@ Yeah. That's kind of an oversight by Microsoft.
 You might notice that if you use a program like [WinSCP](https://winscp.net/) to exchange files between another computer that when you put them on your Linux home on Windows, Linux won't recognize the changes.  You will need to close Ubuntu and open it up again.
 
 There is another way around this though.  If you access the remote computer using OpenSSH or [Midnight Commander](https://midnight-commander.org/), it can all be done on the command line. Doing it that way you don't have to close everything to get stuff.  In the Linuxist Wiki, I will explain how to use SSH, SFTP, SCP, and do a crash course of Midnight Commander.
+
+### Should I change Linux files using Windows stuff?
+
+**NO!** [Even Microsoft thinks that is a bad idea.](https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/) There is good reason NOT to do this.  The most obvious reason is that Windows doesn't have the ability to define the file permissions like Linux can.  It also can't set user or group ownership.  Case in point, how all the folder permission were set to executable.  Secondly, remember eariler when you couldn't see the files you moved from Windows to Linux? That too.
 
 ### What license is this all under?
 MIT License.
