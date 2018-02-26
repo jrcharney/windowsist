@@ -99,6 +99,15 @@ You might notice that if you use a program like [WinSCP](https://winscp.net/) to
 
 There is another way around this though.  If you access the remote computer using OpenSSH or [Midnight Commander](https://midnight-commander.org/), it can all be done on the command line. Doing it that way you don't have to close everything to get stuff.  In the Linuxist Wiki, I will explain how to use SSH, SFTP, SCP, and do a crash course of Midnight Commander.
 
+### What license is this all under?
+MIT License.
+
+### How are you funding this project Jason?  Don't you have to eat and pay bills?
+
+That's a seriously kind question!  I'm hoping to link up with a Patreon account assuming I make sense of the tax stuff that goes with it.
+
+For now, [you can support me by buying me a Coffee with Ko-Fi!](https://ko-fi.com/jrcharney)
+
 ----
 
-Windowist is built using Vim, WSLTTY, Ubuntu on Windows on Linux, and Microsoft Windows 10.
+Windowist is built using [Vim](http://www.vim.org/), [WSLTTY](https://github.com/mintty/wsltty), [Ubuntu on Windows on Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10), [My Linuxist Project](https://github.com/jrcharney/linuxist) and [Microsoft Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10).
